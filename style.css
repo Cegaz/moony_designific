@@ -46,7 +46,6 @@ video
 .image_evenement
 {
 	width: 150px;
-    padding: 5px;
 }
 
 .image_slider
@@ -70,12 +69,14 @@ figure {
     overflow: hidden;
     margin: 0;
 }
+
 img, figcaption {
     transition: all .25s ease;
 }
 img {
     display: block;
 }
+
 figcaption {
     position: absolute;
     top: 0;
