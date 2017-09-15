@@ -3,6 +3,13 @@ body
 	background-color: #000;
 }
 
+h6, h4 {
+    color: #FFF;
+    text-align: center;
+}
+
+
+
 h1
 {
 	font-family: 'Ubuntu', sans-serif;
