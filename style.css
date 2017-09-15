@@ -8,8 +8,6 @@ h6, h4 {
     text-align: center;
 }
 
-
-
 h1
 {
 	font-family: 'Ubuntu', sans-serif;
@@ -26,6 +24,12 @@ p
 	font-size: 1em;
 }
 
+li
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
 video
 {
 	padding: 0 auto;
@@ -39,14 +43,10 @@ video
 	border-bottom: 1px solid #B5B5B5;
 }
 
-.evenements_encart p
-{
-	padding: 0 10px ;
-}
-
 .image_evenement
 {
 	width: 150px;
+    padding: 5px;
 }
 
 .image_slider
@@ -62,7 +62,6 @@ video
 span {
 	color : #BBB;
 }
-
 
 /*flout image*/
 figure {
