@@ -16,7 +16,7 @@ p
 {
 	font-family: 'Ubuntu', sans-serif;
 	padding: 10px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 video
@@ -55,6 +55,7 @@ video
 span {
 	color : #BBB;
 }
+
 
 /*flout image*/
 figure {
