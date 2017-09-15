@@ -112,10 +112,11 @@ h6{
 
 h5{
     font-size: 1.4em;
+    color: white;
 }
 /*Border between block*/
-.infoFooter{
-    border-left: 2px solid blue;
+.separFooter{
+    border-left: 2px solid #B5B5B5;
 }
 
 .blockTrip{
@@ -124,10 +125,20 @@ h5{
 
 .listFooter{
     list-style-type:none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto;
 }
 
 .reseauxSociaux{
     display: flex;
     justify-content: center;
+}
+
+.footer{
+    margin-top: 10px;
+
+}
+
+.centerBlockFooter{
+    padding-left: 0px;
 }
