@@ -101,7 +101,7 @@ figure:hover figcaption {
     margin: auto;
 }
 
-.carousel{
+.carousel-haut{
     margin-top: 113px;
 }
 
@@ -130,4 +130,8 @@ h5{
 .reseauxSociaux{
     display: flex;
     justify-content: center;
+}
+
+.image{
+    padding-left: 0;
 }
