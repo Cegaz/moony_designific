@@ -31,6 +31,10 @@ video
 	padding: 0 auto;
 }
 
+.navHeader{
+    height:70px;
+}
+
 .evenements_encart
 {
 	display: flex;
