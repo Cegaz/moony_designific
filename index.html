@@ -3,9 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<script>
+		$(document).ready(function(){
+    		$("#btn1").click(function(){
+				$("#p1").fadeToggle();
+        		$("#p2").fadeToggle(2500);
+        		$("#p3").fadeToggle("slow");
+
+    });
+});
+
+		$(document).ready(function(){
+    		$("#btn2").click(function(){
+				$("#p4").fadeToggle();
+        		$("#p5").fadeToggle(2500);
+        		$("#p6", "#p7", "#p8").fadeToggle("slow");
+
+    });
+});
+
+		$(document).ready(function(){
+    		$("#btn3").click(function(){
+				$("#p9").fadeToggle();
+        		$("#p10").fadeToggle(2500);
+        		$("#p11").fadeToggle("slow");
+
+    });
+});
+		</script>
 	<title>Moony : Burgers factory à Bordeaux & Biarritz</title>
 </head>
 
@@ -39,7 +68,8 @@
                       <li><a href="#">L'ambiance</a></li>
                       <li><a href="#">Nos menus</a></li>
 					  <li><a href="#">Nos évenements</a></li>
-					  <li><a href="#">Nos produits</a></li>
+					  <li><a href="#">Nos produits</a></li> <!-- lien href ancre ??? -->
+					  <li><a href="#">Qui sommes nous ?</a></li>
 					  <li><a href="#">Contacts</a></li>
                   </ul>
                  
@@ -62,7 +92,7 @@
               <div class="carousel-inner" role="listbox">
                   <div class="item active survole">
                       <figure>
-                          <img src="images/food12.jpg" alt="images" class="img-responsive">
+                          <img src="images/food12.jpg" alt="image" class="img-responsive">
                           <figcaption>Je fais un test</figcaption>
                        </figure>
                       <div class="carousel-caption"></div>
@@ -96,14 +126,17 @@
             </a>
           </div>
 <!-- SEGA -->
-<section>
 <div class="container">
 	<div class="navbar-header">
-		<h1>Nos Menus </h1>
-		<h4>Nos Entrées</h4>
-<!-- entrées -->		
+		<h1>Nos Menus</h1>
+	</div>
+</div>
+
+
+<!-- entrées -->
+	<button id="btn1" class="btn btn-default btn-block">Nos Entrées</button>
 		<section class="Menu container-fluid">
-			<div class="row">
+			<div id="p1" class="row">
 				<div class="col-sm-6 col-md-4 col-lg-3">
 						<figure class="thumbnail text-center">
 							<img src="images/food4.jpg">
@@ -116,7 +149,7 @@
 				</div>
 				
 
-				<div class="col-sm-6 col-md-4 col-lg-3">
+				<div id="p2" class="col-sm-6 col-md-4 col-lg-3">
 							<figure class="thumbnail text-center">
 								<img src="images/food4.jpg">
 								<figcaption class="caption">
@@ -128,7 +161,7 @@
 				</div>
 						
 
-				<div class="col-sm-6 col-md-4 col-lg-3">
+				<div id="p3" class="col-sm-6 col-md-4 col-lg-3">
 								<figure class="thumbnail text-center">
 									<img src="images/food4.jpg">
 									<figcaption class="caption">
@@ -139,81 +172,77 @@
 								</figure>
 			
 				</div>
-
-			</div>
-
-		</section>
-<!-- plats -->
-		<h4>Nos Plats</h4>
+			</section>
 		
+<!-- plats -->
+	<button id="btn2" class="btn btn-default btn-block">Nos Plats</button>
 		<section class="Menu container-fluid">
-			<div class="row">
-				
-				<div class="col-sm-6 col-md-4 col-lg-3">
-						<figure class="thumbnail text-center">
-							<img src="images/food1.jpg">
-							<figcaption class="caption">
-								<h6>burger fermier</h6>
-								<h6>viandes de qualités</h6>
-								<h6>"4.50 $"</h6>
-							</figcaption>
-						</figure>
-				</div>
-				
-
-				<div class="col-sm-6 col-md-4 col-lg-3">
-							<figure class="thumbnail text-center">
-								<img src="images/food2.jpg">
-								<figcaption class="caption">
-									<h6>burger wilder</h6>
-									<h6>viandes de qualités</h6>
-									<h6>"4 $"</h6>
-								</figcaption>
-							</figure>
-				</div>
+			<div id="p4" class="row">
+			<div class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail text-center">
+						<img src="images/food1.jpg">
+					<figcaption class="caption">
+						<h6>burger fermier</h6>
+						<h6>viandes de qualités</h6>
+						<h6>"4.50 $"</h6>
+					</figcaption>
+					</figure>
+			</div>
 						
-
-				<div class="col-sm-6 col-md-4 col-lg-3">
-								<figure class="thumbnail text-center">
-									<img src="images/food3.jpg">
-									<figcaption class="caption">
-										<h6>burger bordelais</h6>
-										<h6>viandes de qualités</h6>
-										<h6>"3.95 $"</h6>
-									</figcaption>
-								</figure>
-			
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3">
-						<figure class="thumbnail text-center">
+		
+			<div id="p5" class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail text-center">
+							<img src="images/food2.jpg">
+						<figcaption class="caption">
+							<h6>burger wilder</h6>
+							<h6>viandes de qualités</h6>
+							<h6>"4 $"</h6>
+						</figcaption>
+					</figure>
+			</div>
+								
+		
+			<div id="p6" class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail text-center">
+							<img src="images/food3.jpg">
+						<figcaption class="caption">
+							<h6>burger bordelais</h6>
+							<h6>viandes de qualités</h6>
+							<h6>"3.95 $"</h6>
+						</figcaption>
+					</figure>
+					
+			</div>
+		
+			<div id="p7" class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail text-center">
 							<img src="images/food5.jpg">
-							<figcaption class="caption">
-								<h6>burger spartiate</h6>
-								<h6>viandes de qualités</h6>
-								<h6>"3.95 $"</h6>
-							</figcaption>
-						</figure>
-	
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3">
-						<figure class="thumbnail text-center">
+						<figcaption class="caption">
+							<h6>burger spartiate</h6>
+							<h6>viandes de qualités</h6>
+							<h6>"3.95 $"</h6>
+						</figcaption>
+					</figure>
+			</div>
+		
+			<div id="p8" class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail text-center">
 							<img src="images/food11.jpg">
-							<figcaption class="caption">
-								<h6>burger de l'extreme</h6>
-								<h6>viandes de qualités</h6>
-								<h6>"3.95 $"</h6>
-							</figcaption>
-						</figure>
-
-				</div>
+						<figcaption class="caption">
+							<h6>burger de l'extreme</h6>
+							<h6>viandes de qualités</h6>
+							<h6>"3.95 $"</h6>
+						</figcaption>
+					</figure>
+		
+			</div>
+	</section>		
+		
 <!-- dessert -->
-		<h4>Nos Desserts</h4>
+	<button id="btn3" class="btn btn-default btn-block"> Nos Desserts</button>
 
 		<section class="Menu container-fluid">
-			<div class="row">
-
+			<div id="p9" class="row">
 				<div class="col-sm-6 col-md-4 col-lg-3">
 					<figure class="thumbnail text-center">
 						<img src="images/food9.jpg">
@@ -223,10 +252,9 @@
 						<h6>"4.50 $"</h6>
 					</figcaption>
 				</figure>
-		</div>
+			</div>
 		
-
-		<div class="col-sm-6 col-md-4 col-lg-3">
+			<div id="p10" class="col-sm-6 col-md-4 col-lg-3">
 					<figure class="thumbnail text-center">
 						<img src="images/food14.jpg">
 						<figcaption class="caption">
@@ -235,10 +263,9 @@
 							<h6>"4 $"</h6>
 						</figcaption>
 					</figure>
-		</div>
+			</div>
 				
-
-		<div class="col-sm-6 col-md-4 col-lg-3">
+			<div id="p11" class="col-sm-6 col-md-4 col-lg-3">
 						<figure class="thumbnail text-center">
 							<img src="images/food4.jpg">
 							<figcaption class="caption">
@@ -248,15 +275,11 @@
 							</figcaption>
 						</figure>
 	
-		</div>
+			</div>
 
 		</div>
 
 		</section>
-		</div>
-		</section>	
-	</div>
-</section>
 
 <!-- partie le saviez vous -->
 
@@ -391,7 +414,7 @@
                         <h5 class="text-center">Horaires</h5>
                         <h6 >Dejeuner</h6>
                         <ul class="listFooter">
-                            <li><Lundi-Samedi</li>
+                            <li>Lundi-Samedi</li>
                             <li>11h30-18h</li>
                         </ul>
 
@@ -424,7 +447,8 @@
                         
                         <div id="TA_rated242" class="TA_rated blockTrip">
                             <ul id="zkKWQhUnN8" class="TA_links GLF6sJFWL">
-                                <li id="aQmkzueP440g" class="45DnyAW"><a target="_blank" href="https://www.tripadvisor.fr/"><img src="https://www.tripadvisor.fr/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a></li>
+								<li id="aQmkzueP440g" class="45DnyAW"><a target="_blank" href="https://www.tripadvisor.fr/">
+									<img src="https://www.tripadvisor.fr/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a></li>
                             </ul>
                         </div>
                         
@@ -435,9 +459,8 @@
                             <a href="http://instagram.fr"><img src="images/instagram.png"width="63" height="63"  alt="logo"></a>
                         </div>    
                     </div>
-                </div>    
-  <!-- Bien mettre jquery avant bootstrap -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                </div>    			
+    	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
