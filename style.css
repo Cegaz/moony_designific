@@ -159,10 +159,6 @@ h5{
     border-left: 2px solid #B5B5B5;
 }
 
-.blockTrip{
-    margin-left: 25%;
-}
-
 .listFooter{
     list-style-type:none;
     font-family: 'Ubuntu', sans-serif;
@@ -189,4 +185,17 @@ h5{
 
 .text_slider {
     background-color: #333;
+}
+
+.infoFooter{
+    border-left:solid #400000;
+}
+
+.reseauxBorder{
+    border-top:solid #400000;
+}
+
+.blockTrip{
+    display: flex;
+    justify-content: center;
 }
