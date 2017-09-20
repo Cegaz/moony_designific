@@ -1,237 +1,404 @@
 <!DOCTYPE html> <!-- test cecile -->
 <html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<script>
+		$(document).ready(function () {
+			$("#btn1").click(function () {
+				$("#p1").fadeToggle();
+				$("#p2").fadeToggle(2500);
+				$("#p3").fadeToggle("slow");
+
+			});
+		});
+
+		$(document).ready(function () {
+			$("#btn2").click(function () {
+				$("#p4").fadeToggle();
+				$("#p5").fadeToggle(2500);
+				$("#p6", "#p7", "#p8").fadeToggle("slow");
+
+			});
+		});
+
+		$(document).ready(function () {
+			$("#btn3").click(function () {
+				$("#p9").fadeToggle();
+				$("#p10").fadeToggle(2500);
+				$("#p11").fadeToggle("slow");
+
+			});
+		});
+	</script>
 	<title>Moony : Burgers factory à Bordeaux & Biarritz</title>
 </head>
 
 <body>
 
-<!-- DAMIEN -->
-  <div id="bloc_page">
-      <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                      aria-expanded="false">
+	<div id="bloc_page">
+		<!-- DAMIEN -->
+		<nav class="navbar navbar-default navbar-fixed-top navHeader">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					    aria-expanded="false">
           					<span class="sr-only"></span>
           					<span class="icon-bar"></span>
           					<span class="icon-bar"></span>
           					<span class="icon-bar"></span>
       						</button>
-                  
-                  <div class="center-block">
-                      <img class="pull-left" src="images/logo.png" width="70" height="70">
-                      <img class="logoMoony" src="images/logomoony.png" width="120" height="110" alt="logoRestaurant">
-                  </div>
-              </div>        
-              
 
-              <!-- Le menu et menu-burger -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">L'ambiance</a></li>
-                      <li><a href="#">Nos menus</a></li>
-                      <li><a href="#">Nos évenements</a></li>
-                  </ul>
-                 
-              </div>
-              <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-      </nav>
-      <div class="container-fluid">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
+					<div class="center-block">
+						<img class="pull-left" src="images/logotrip.png" width="70" height="70">
+						<img class="logoMoony" src="images/logomoony.png" width="120" height="110" alt="logoRestaurant">
+					</div>
+				</div>
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                  <div class="item active survole">
-                      <figure>
-                          <img src="images/food12.jpg" alt="images" class="img-responsive">
-                          <figcaption>Test</figcaption>
-                       </figure>
-                      <div class="carousel-caption"></div>
-                  
 
-                  </div>
-                  <div class="item">
-                      <figure>
-                          <img src="images/food13.jpg" alt="image" class="img-responsive">
-                          <figcaption>Test</figcaption>
-                          <div class="carousel-caption"></div>
-                      </figure>    
+				<!-- Le menu et menu-burger -->
+				<div class="collapse navbar-collapse menuFond" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right charLiMenu">
+						<li><a href="#ambiance">L'ambiance</a></li>
+						<li><a href="#menuAncre">Nos menus</a></li>
+						<li><a href="#evenements">Nos évenements</a></li>
+						<li><a href="#saviezAncre">Nos produits</a></li>
+						<li><a href="#footerAncre">Contacts</a></li>
+					</ul>
 
-                  </div>
-                  <div class="item">
-                      <figure>
-                          <img src="images/food14.jpg" alt="image" class="img-responsive">
-                          <figcaption>Test</figcaption>
-                      </figure>
-                          <div class="carousel-caption"></div>
-                  </div>
-              </div>
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<div class="container-fluid noPaddingSlider">
+			<div id="carousel-example-generic-haut" class="carousel carousel-haut slide " data-ride="carousel">
+
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner " role="listbox">
+					<div class="item active survole">
+						<div>
+							<img src="images/ambiance.jpg" alt="images" class="img-responsive">
+
+							<div class="titlePhoto">L'ambiance</div>
+						</div>
+						<div class="carousel-caption"></div>
+
+
+					</div>
+					<div class="item">
+						<div>
+							<img src="images/food11.jpg" alt="image" class="img-responsive">
+							<div class="titlePhoto">Nos menus</div>
+							<div class="carousel-caption"></div>
+						</div>
+
+					</div>
+					<div class="item">
+						<div>
+							<img src="images/rugby2.jpg" alt="image" class="img-responsive">
+							<div class="titlePhoto">Nos événements</div>
+						</div>
+						<div class="carousel-caption"></div>
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic-haut" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<a class="right carousel-control" href="#carousel-example-generic-haut" role="button" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
-<!-- SEGA -->
-
-<div class="container">
-	<div class="navbar-header">
-		<h1>Nos Menus</h1>
-		
-		<button class="display-food">Nos Menus</button>
-	<div class="container-food">
-		
-		<section>
-			<h3>Plats</h3>
-			<img class="image" img src="img/food1.jpg"  alt="image">
-					
-		</section>
-		
-		<section>
-			<h3>Entrées</h3>
-			<img class="image" img src="img/food4.jpg"  alt="images">
-					
-		</section>
-		
-		<section>
-			<h3>Dessert</h3>
-			<img class="image" img src="img/food9.jpg" alt="images">
-					
-		</section>
-	</div>
-	</div>
-</div>
-
-
-<!-- ajout menu dropdown -->
-
-<div class="container-fluid">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
-		</div>	
-	
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-		<figure>
-			<img src="img/sav1.jpg" alt="burger1" class="img-responsive">
-					<figcaption>Le Saviez vous</figcaption>
-		</figure>
-					<div class="carousel-caption"></div>
-					
-	
-		</div>
-	
-		<div class="item">
-			<figure>
-				<img src="img/sav1.jpg" alt="image" class="img-responsive">
-						<figcaption>Le Saviez vous</figcaption>
-						<div class="carousel-caption"></div>
-			</figure>    
-		
-		</div>
-	
-		<div class="item">
-			<figure>
-				<img src="img/sav1.jpg" alt="image" class="img-responsive">
-						<figcaption>Le Saviez vous</figcaption>
-						<div class="carousel-caption"></div>
-			</figure>    
-		
-		</div>
-	</div>
-	
-	
-	
-	<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-
-<!-- CECILE -->
-	<section id="ambiance">
-		<h1>L'AMBIANCE</h1>
-
-		<article id="ambiance_video">
-		<!-- ajouter autoplay=1 dans les paramètres pour la version desktop ? -->
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/135651630?loop=1&color=64fad2&title=0&byline=0&portrait=0" width="640" height="270" frameborder="0"></iframe>
 			</div>
-		 	<p>Le restaurant Moony, brasserie nouvelle génération, vous accueille toute l'année pour déguster de bons plats frais en terrasse, à l'intérieur dans une ambiance sportive et conviviale, ou à l'abri des regards dans un patio privatif.
-		 	</p>
-		</article>
+		</div>
 
-		<!-- pourquoi les chevrons ne font pas tourner le carousel ?-->
-		<article id="ambiance_slider">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
+		<!-- SEGA -->
 
-			  <!-- Wrapper for slides -->
-			  <!-- redimensionner les photos -même hauteur -->
-			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      <img src="images/biarritz0.jpg" alt="restaurant biarritz">
-			      <p>texte sur l'histoire familiale.......</p>
-			    </div>
-			    <div class="item">
-			      <img src="images/biarritz2.jpg" alt="restaurant biarritz">
-			      <p>texte sur l'équipe....</p>
-			    </div>
-			    <div class="item">
-			      <img src="images/biarritz6.jpg" alt="restaurant biarritz">
- 			      <p>texte sur les lieux</p>
-			    </div>
-			  </div>
+		<section id="menuAncre">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<h1>Nos Menus</h1>
+				</div>
+			</div>
 
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<!-- entrées -->
+			<button id="btn1" class="btn btn-default btn-block">Nos Entrées</button>
+			<section class="Menu container-fluid">
+				<div id="p1" class="row">
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food4.jpg">
+							<figcaption class="caption">
+								<h6>salade composée</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"4.50 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div id="p2" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food4.jpg">
+							<figcaption class="caption">
+								<h6>salade de choux</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"4 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div id="p3" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food4.jpg">
+							<figcaption class="caption">
+								<h6>macedoines de légumes</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
+			</section>
+
+			<!-- plats -->
+			<button id="btn2" class="btn btn-default btn-block">Nos Plats</button>
+			<section class="Menu container-fluid">
+				<div id="p4" class="row">
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food1.jpg">
+							<figcaption class="caption">
+								<h6>burger fermier</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"4.50 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div id="p5" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food2.jpg">
+							<figcaption class="caption">
+								<h6>burger wilder</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"4 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div id="p6" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food3.jpg">
+							<figcaption class="caption">
+								<h6>burger bordelais</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
+
+					<div id="p7" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food5.jpg">
+							<figcaption class="caption">
+								<h6>burger spartiate</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div id="p8" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food11.jpg">
+							<figcaption class="caption">
+								<h6>burger de l'extreme</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
+				</div>	
+			</section>
+
+			<!-- dessert -->
+			<button id="btn3" class="btn btn-default btn-block"> Nos Desserts</button>
+
+			<section class="Menu container-fluid">
+				<div id="p9" class="row">
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food9.jpg">
+							<figcaption class="caption">
+								<h6>crémé glacée</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"4.50 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div id="p10" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food14.jpg">
+							<figcaption class="caption">
+								<h6>Crumble</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"4 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div id="p11" class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food4.jpg">
+							<figcaption class="caption">
+								<h6>Yoghurt granola</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- partie le saviez vous -->
+
+			<section id="saviezAncre">
+				<div class="container">
+					<div class="navbar-header">
+						<h1>Le saviez-vous ?</h1>
+
+						<div class="container">
+							<h4>Le saviez-vous ?</h4>
+						</div>
+
+						<section class="Menu container-fluid">
+							<div class="row">
+
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<figure class="thumbnail text-center">
+										<img src="images/buns.jpg">
+										<figcaption class="caption">
+											<h6>Nos pains burger</h6>
+											<h6>Saviez-vous que tous nos buns sont fabriquée par des artisans boulanger </h6>
+
+										</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<figure class="thumbnail text-center">
+										<img src="images/savburger.png">
+										<figcaption class="caption">
+											<h6>Nos burger</h6>
+											<h6>Saviez-vous que nos burger sont fabriquées avec des produits frais de qualités</h6>
+										</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<figure class="thumbnail text-center">
+										<img src="images/steak.jpg">
+										<figcaption class="caption">
+											<h6>Nos viandes</h6>
+											<h6>Saviez-vous que nos viandes sont de premiers choix, <br/> nos viandes sont aussi de la régions.</h6>
+										</figcaption>
+									</figure>
+								</div>
+
+							</div>
+
+						</section>
+
+						<!-- fin de partie le saviez vous -->
+
+
+
+						<!-- CECILE -->
+						<section id="ambiance">
+							<h1>L'AMBIANCE</h1>
+
+							<article id="ambiance_video">
+								<!-- ajouter autoplay=1 dans les paramètres pour la version desktop ? -->
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/135651630?loop=1&color=64fad2&title=0&byline=0&portrait=0"
+									    width="640" height="270" frameborder="0"></iframe>
+								</div>
+								<p>Moony, la brasserie nouvelle génération, vous accueille toute l'année pour déguster de bons plats frais en terrasse,
+									à l'intérieur dans une ambiance sportive et conviviale, ou à l'abri des regards dans un patio privatif.</p>
+							</article>
+
+							<article id="ambiance_slider">
+								<div id="carousel-example-generic-bas" class="carousel slide" data-ride="carousel">
+									<!-- Indicators -->
+									<!--<ol class="carousel-indicators">
+			    <li data-target="carousel-example-generic-bas" data-slide-to="0" class="active"></li>
+			    <li data-target="carousel-example-generic-bas" data-slide-to="1"></li>
+			    <li data-target="carousel-example-generic-bas" data-slide-to="2"></li>
+			  </ol>-->
+
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner" role="listbox">
+										<div class="item active text_slider">
+											<img src="images/ambiance11.jpg" alt="restaurant biarritz">
+											<p>Moony c'est l'aventure familiale d'un couple : John, passionné depuis toujours par la cuisine de son sud-ouest
+												natal...</p>
+										</div>
+										<div class="item text_slider">
+											<img src="images/ambiance4.jpg" alt="restaurant biarritz">
+											<p>... et Elisa, qui a parcouru le monde pour goûter aux différentes saveurs de 60 pays...</p>
+										</div>
+										<div class="item text_slider">
+											<img src="images/ambiance5.jpg" alt="restaurant biarritz">
+											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+										</div>
+										<div class="item text_slider">
+											<img src="images/ambiance1.jpg" alt="restaurant biarritz">
+											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+										</div>
+										<div class="item text_slider">
+											<img src="images/ambiance7.jpg" alt="restaurant biarritz">
+											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+										</div>
+										<div class="item text_slider">
+											<img src="images/ambiance8.jpg" alt="restaurant biarritz">
+											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+										</div>
+									</div>
+
+									<!-- Controls -->
+									<a class="left carousel-control" href="#carousel-example-generic-bas" role="button" data-slide="prev">
 			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			    <span class="sr-only">Previous</span>
 			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+									<a class="right carousel-control" href="#carousel-example-generic-bas" role="button" data-slide="next">
 			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			    <span class="sr-only">Next</span>
 			  </a>
-			</div>
-		</article>
+								</div>
+							</article>
 
-	</section>
+						</section>
+
 
 	<section id="evenements">
 		<h1>NOS ÉVÉNEMENTS</h1>
@@ -308,5 +475,7 @@
   <!-- Bien mettre jquery avant bootstrap -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
