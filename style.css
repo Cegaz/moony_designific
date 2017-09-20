@@ -77,6 +77,14 @@ span {
     color: #960B18;
 }
 
+.charLiMenu{
+    font-family: 'ubuntu';
+}
+
+.noPaddingSlider{
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
 
@@ -122,7 +130,7 @@ flout image*/
 }
 
 .carousel-haut{
-    margin-top: 113px;
+    margin-top: 70px;
 }
 
 /*CSS Footer */

@@ -35,7 +35,7 @@
 
               <!-- Le menu et menu-burger -->
               <div class="collapse navbar-collapse menuFond" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
+                  <ul class="nav navbar-nav navbar-right charLiMenu">
                       <li><a href="#ambiance">L'ambiance</a></li>
                       <li><a href="#menuAncre">Nos menus</a></li>
 					  <li><a href="#evenements">Nos évenements</a></li>
@@ -49,34 +49,35 @@
           <!-- /.container-fluid -->
       </nav>
 
-      <div class="container-fluid">
-          <div id="carousel-example-generic-haut" class="carousel carousel-haut slide" data-ride="carousel">
+      <div class="container-fluid noPaddingSlider">
+          <div id="carousel-example-generic-haut" class="carousel carousel-haut slide " data-ride="carousel">
             
 
               <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
+              <div class="carousel-inner " role="listbox">
                   <div class="item active survole">
-                      <figure>
-                          <img src="images/ambiance.jpg" alt="images" class="img-responsive">
-                          <figcaption class="titlePhoto">L'ambiance</figcaption>
-                       </figure>
+                      <div>
+						  <img src="images/ambiance.jpg" alt="images" class="img-responsive">
+						  
+                          <div class="titlePhoto">L'ambiance</div>
+					  </div>
                       <div class="carousel-caption"></div>
                   
 
                   </div>
                   <div class="item">
-                      <figure>
+                      <div>
                           <img src="images/food11.jpg" alt="image" class="img-responsive">
-                          <figcaption class="titlePhoto">Nos menus</figcaption>
+                          <div class="titlePhoto">Nos menus</div>
                           <div class="carousel-caption"></div>
-                      </figure>    
+					  </div>    
 
                   </div>
                   <div class="item">
-                      <figure>
+                      <div>
                           <img src="images/rugby2.jpg" alt="image" class="img-responsive">
-                          <figcaption class="titlePhoto">Nos événements</figcaption>
-                      </figure>
+                          <div class="titlePhoto">Nos événements</div>
+					  </div>
                           <div class="carousel-caption"></div>
                   </div>
               </div>
@@ -89,7 +90,8 @@
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+		  </div>
+      </div>
 <!-- SEGA -->
 <section id = "menuAncre">
 <div class="container">
@@ -433,7 +435,7 @@
 				</div>    
 			
   <!-- Bien mettre jquery avant bootstrap -->
-   		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   	<!--	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
