@@ -42,6 +42,7 @@ video
 
 .navHeader{
     height:70px;
+    background-color: #604040;
 }
 
 .evenements_encart
@@ -75,7 +76,8 @@ span {
 .titlePhoto{
     font-size: 1.7em;
     font-family: 'ubuntu';
-    color: #960B18;
+    color: whitesmoke;
+    background-color: rgba(96, 64, 64, 0.69);
 }
 
 .charLiMenu{
