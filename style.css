@@ -68,7 +68,7 @@ span {
 }
 
 
-/*flout image*/
+/*flout image
 figure {
     position: relative;
     display: inline-block;
@@ -99,10 +99,11 @@ figure:hover img {
 figure:hover figcaption {
     opacity: 1;
 }
-/*flout image*/
+flout image*/
 
 .logoMoony{
     margin: auto;
+    display: block;
 }
 
 .carousel{
