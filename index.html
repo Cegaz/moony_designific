@@ -34,13 +34,13 @@
               
 
               <!-- Le menu et menu-burger -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">L'ambiance</a></li>
-                      <li><a href="#">Nos menus</a></li>
-					  <li><a href="#">Nos évenements</a></li>
-					  <li><a href="#">Nos produits</a></li>
-					  <li><a href="#">Contacts</a></li>
+              <div class="collapse navbar-collapse menuFond" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right charLiMenu">
+                      <li><a href="#ambiance">L'ambiance</a></li>
+                      <li><a href="#menuAncre">Nos menus</a></li>
+					  <li><a href="#evenements">Nos évenements</a></li>
+					  <li><a href="#saviezAncre">Nos produits</a></li>
+					  <li><a href="#footerAncre">Contacts</a></li>
                   </ul>
                  
               </div>
@@ -49,39 +49,35 @@
           <!-- /.container-fluid -->
       </nav>
 
-      <div class="container-fluid">
-          <div id="carousel-example-generic-haut" class="carousel carousel-haut slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic-haut" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic-haut" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic-haut" data-slide-to="2"></li>
-              </ol>
+      <div class="container-fluid noPaddingSlider">
+          <div id="carousel-example-generic-haut" class="carousel carousel-haut slide " data-ride="carousel">
+            
 
               <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
+              <div class="carousel-inner " role="listbox">
                   <div class="item active survole">
-                      <figure>
-                          <img src="images/food12.jpg" alt="images" class="img-responsive">
-                          <figcaption>Je fais un test</figcaption>
-                       </figure>
+                      <div>
+						  <img src="images/ambiance.jpg" alt="images" class="img-responsive">
+						  
+                          <div class="titlePhoto">L'ambiance</div>
+					  </div>
                       <div class="carousel-caption"></div>
                   
 
                   </div>
                   <div class="item">
-                      <figure>
-                          <img src="images/food13.jpg" alt="image" class="img-responsive">
-                          <figcaption>Test</figcaption>
+                      <div>
+                          <img src="images/food11.jpg" alt="image" class="img-responsive">
+                          <div class="titlePhoto">Nos menus</div>
                           <div class="carousel-caption"></div>
-                      </figure>    
+					  </div>    
 
                   </div>
                   <div class="item">
-                      <figure>
-                          <img src="images/food14.jpg" alt="image" class="img-responsive">
-                          <figcaption>Test</figcaption>
-                      </figure>
+                      <div>
+                          <img src="images/rugby2.jpg" alt="image" class="img-responsive">
+                          <div class="titlePhoto">Nos événements</div>
+					  </div>
                           <div class="carousel-caption"></div>
                   </div>
               </div>
@@ -94,9 +90,10 @@
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+		  </div>
+      </div>
 <!-- SEGA -->
-<section>
+<section id = "menuAncre">
 <div class="container">
 	<div class="navbar-header">
 		<h1>Nos Menus </h1>
@@ -260,7 +257,7 @@
 
 <!-- partie le saviez vous -->
 
-<section>
+<section id = "saviezAncre">
 		<div class="container">
 			<div class="navbar-header">
 				<h1>Le saviez-vous ?</h1>
@@ -396,7 +393,7 @@
 			</section>
 
 <!-- DAMIEN -->
-            <div class="container-fluid footer">
+            <div id = "footerAncre" class="container-fluid footer">
                 <div class="row ">
                     <div class="col-xs-6 centerBlockFooter">
                         <h5 class="text-center">Horaires</h5>
@@ -428,7 +425,7 @@
                             <li>Biarritz,</br> 05 59 24 71 05</li>
                             <li>resto@moony64.com</li>
                         </ul>
-                    </div>
+					</div>
                 <div class="row">
                     <div class="col-xs-12">
                         
@@ -446,9 +443,10 @@
                             <a href="http://instagram.fr"><img src="images/instagram.png"width="63" height="63"  alt="logo"></a>
                         </div>    
                     </div>
-                </div>    
+				</div>    
+			
   <!-- Bien mettre jquery avant bootstrap -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   	<!--	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
