@@ -67,7 +67,30 @@ span {
     font-size: 1.2em;
 }
 
-/*flout image*/
+.menuFond{
+    background-color: rgb(150, 11, 24);
+    margin-top: -40px;
+}
+
+.titlePhoto{
+    font-size: 1.7em;
+    font-family: 'ubuntu';
+    color: #960B18;
+}
+
+.charLiMenu{
+    font-family: 'ubuntu';
+}
+
+.noPaddingSlider{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+/*flout image
+
 figure {
     position: relative;
     display: inline-block;
@@ -100,14 +123,15 @@ figure:hover img {
 figure:hover figcaption {
     opacity: 0.7;
 }
-/*flout image*/
+flout image*/
 
 .logoMoony{
     margin: auto;
+    display: block;
 }
 
 .carousel-haut{
-    margin-top: 113px;
+    margin-top: 70px;
 }
 
 /*CSS Footer */
