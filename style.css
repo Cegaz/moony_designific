@@ -155,19 +155,23 @@ h5{
     color: white;
 }
 /*Border between block -- start footer script*/
-.separFooter{
-    border-left: 2px solid #B5B5B5;
+.flexFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .listFooter{
     list-style-type:none;
     font-family: 'Ubuntu', sans-serif;
     margin: auto;
+    padding-left: 0;
 }
 
 .reseauxSociaux{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footer{
@@ -192,10 +196,19 @@ h5{
 }
 
 .reseauxBorder{
-    border-top:solid #400000;
+    
+    padding-top: 15px;
+    
 }
 
 .blockTrip{
     display: flex;
     justify-content: center;
+}
+
+.colorReseaux{
+    color: whitesmoke;
+}
+i:hover{
+    color:#600000;
 }
