@@ -233,11 +233,19 @@ h5{
 }
 i:hover{
     color:#600000;
+}
 
-@media (min-width: 768px)
-{
-    .text-slider
-    {
+/*
+@media (min-width: 768px){
+    .text-slider{
         font-size: 1.2em;
     }
-}
+}*/
+
+@media (min-width: 600px){
+    .retireMenu{
+      display:none;
+    }
+  }
+
+  
