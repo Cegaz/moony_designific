@@ -22,6 +22,11 @@ p
 	font-family: 'Ubuntu', sans-serif;
 	padding: 10px;
 	font-size: 1em;
+    color: #AAA;
+}
+
+#ambiance_video p {
+    text-align: justify;
 }
 
 li
@@ -63,7 +68,8 @@ video
 }
 
 span {
-	color : #BBB;
+	color : #FFF;
+    font-size: 1.2em;
 }
 
 /*flout image*/
@@ -149,4 +155,8 @@ h5{
 
 .image{
     padding-left: 0;
+}
+
+.text_slider {
+    background-color: #333;
 }
