@@ -25,7 +25,17 @@ p
     color: #AAA;
 }
 
-#ambiance_video p {
+@media (min-width: 768px)
+{
+    #ambiance_video
+    {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+#ambiance_video p
+{
     text-align: justify;
 }
 
@@ -60,6 +70,18 @@ video
 .evenements_encart p
 {
     margin: auto;
+}
+
+@media (min-width: 768px)
+{
+    .evenements_encart img
+    {
+        width: 400px;
+    }
+    .evenements_encart p
+    {
+        font-size: 2em;
+    }
 }
 
 .image_slider
@@ -189,4 +211,12 @@ h5{
 
 .text_slider {
     background-color: #333;
+}
+
+@media (min-width: 768px)
+{
+    .text-slider
+    {
+        font-size: 1.2em;
+    }
 }
