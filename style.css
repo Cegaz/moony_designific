@@ -25,17 +25,7 @@ p
     color: #AAA;
 }
 
-@media (min-width: 768px)
-{
-    #ambiance_video
-    {
-        width: 90%;
-        margin: auto;
-    }
-}
-
-#ambiance_video p
-{
+#ambiance_video p {
     text-align: justify;
 }
 
@@ -43,6 +33,15 @@ li
 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1em;
+}
+
+.navbar-collapse{
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: rgb(150, 11, 24);
+    font-size:1.2em;
 }
 
 video
@@ -53,6 +52,10 @@ video
 .navHeader{
     height:70px;
     background-color: #604040;
+}
+
+.displayContent{
+    display: contents;
 }
 
 .evenements_encart
@@ -72,18 +75,6 @@ video
     margin: auto;
 }
 
-@media (min-width: 768px)
-{
-    .evenements_encart img
-    {
-        width: 400px;
-    }
-    .evenements_encart p
-    {
-        font-size: 2em;
-    }
-}
-
 .image_slider
 {
 	height: 100px;
@@ -100,9 +91,12 @@ span {
 }
 
 .menuFond{
-    background-color: rgb(150, 11, 24);
-    margin-top: -40px;
+   /* background-color: rgb(150, 11, 24);*/
+    /*margin-top: -40px;*/
+     color:red ;
 }
+
+
 
 .titlePhoto{
     font-size: 1.7em;
@@ -235,17 +229,20 @@ i:hover{
     color:#600000;
 }
 
-/*
-@media (min-width: 768px){
-    .text-slider{
-        font-size: 1.2em;
+@media( min-width : 600px){
+/*   .disappearsNavMobile{
+        display: none;
+        
+    }*/
+    .paddingContainerNav{
+        padding: 0;
     }
-}*/
 
-@media (min-width: 600px){
-    .retireMenu{
-      display:none;
+    .charLiMenu{
+        display: none;
     }
-  }
+
+}
+
 
   
