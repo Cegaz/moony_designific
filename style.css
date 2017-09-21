@@ -96,7 +96,11 @@ span {
      color:red ;
 }
 
-
+/*Menu version Desktop*/
+.menuVersionDesktop{
+    border-top-width: 120px;
+    border-top-style: solid;
+}
 
 .titlePhoto{
     font-size: 1.7em;
@@ -230,19 +234,35 @@ i:hover{
 }
 
 @media( min-width : 600px){
-/*   .disappearsNavMobile{
-        display: none;
-        
-    }*/
+  
     .paddingContainerNav{
         padding: 0;
-    }
 
+    }
     .charLiMenu{
         display: none;
+    /* début des rajouts */
+    }
+    .logoMoony{ 
+        height: 150px;
+        width: 160px;
     }
 
+    .logoTrip{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .navHeader{
+        height: 113px;
+    }
+
+    .noPaddingSlider{
+        display: none;
+    }
 }
-
-
-  
+@media(max-width : 600px){
+    .menuVersionDesktop{
+        display: none;
+    }
+}
