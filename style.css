@@ -1,3 +1,13 @@
+/* google fonts
+    font-family: 'Sedgwick Ave', cursive;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Days One', sans-serif;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-family: 'Schoolbell', cursive;
+    font-family: 'Titan One', cursive;
+    font-family: 'Finger Paint', cursive;
+*/
 
 body
 {
@@ -5,17 +15,29 @@ body
 }
 
 h6, h4 {
-    color: #604040;
+    color: #FFF;
     text-align: center;
+}
+
+.onglets {
+    font-family: 'Schoolbell', sans-serif;
+    font-size: 1.5em;
 }
 
 h1
 {
-	font-family: 'Ubuntu', sans-serif;
+    font-family: 'Schoolbell', sans-serif;
 	color: #FFF;
-	background-color: #B5B5B5;
+    background-color: #600000;
 	padding: 10px;
-	font-size: 2em;
+}
+
+@media (min-width: 768px)
+{
+    h1{
+        text-align: center;
+        font-size: 3em;
+    }
 }
 
 p
@@ -23,27 +45,50 @@ p
 	font-family: 'Ubuntu', sans-serif;
 	padding: 10px;
 	font-size: 1em;
-    color: #AAA;
+    color: #555;
 }
 
 @media (min-width: 768px)
 {
-    #ambiance_video
-    {
+    #ambiance_video, #ambiance_slider {
         width: 90%;
         margin: auto;
     }
+
+    .ambiance_encart {
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .ambiance_encart p {
+        font-size: 2em;
+        margin: auto;
+        margin-right: 100px;
+    }
 }
+
 
 #ambiance_video p
 {
     text-align: justify;
 }
 
+
 li
 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1em;
+    color: #AAA;
+}
+
+.navbar-collapse{
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: rgb(150, 11, 24);
+    font-size:1.2em;
 }
 
 video
@@ -53,7 +98,11 @@ video
 
 .navHeader{
     height:70px;
-    background-color: #604040;
+    background-color: #333;   
+}
+
+.displayContent{
+    display: contents;
 }
 
 .evenements_encart
@@ -63,9 +112,16 @@ video
 	font-size: 0.8em;
 }
 
-.evenements_encart img
+.image_evenement
 {
     width: 150px;
+    float: left;
+}
+
+.image_evenement_droite
+{
+    width: 150px;
+    float: right;
 }
 
 .evenements_encart p
@@ -78,10 +134,12 @@ video
     .evenements_encart img
     {
         width: 400px;
+        padding: 20px;
     }
     .evenements_encart p
     {
         font-size: 2em;
+        text-align: right;
     }
 }
 
@@ -100,16 +158,31 @@ span {
     font-size: 1.2em;
 }
 
-.menuFond{
-    background-color: rgb(150, 11, 24);
-    margin-top: -40px;
+.glyphicon {
+    float: right;
 }
+
+@media (min-width: 768px) {
+    .glyphicon {
+        margin-right: 15px;
+    }
+}
+
+.menuFond{
+    background-color: #600000;
+    margin-top: -40px;
+   /* background-color: rgb(150, 11, 24);*/
+    /*margin-top: -40px;*/
+     color:red ;
+}
+
 
 .titlePhoto{
     font-size: 1.7em;
     font-family: 'ubuntu';
     color: whitesmoke;
-    background-color: rgba(96, 64, 64, 0.69);
+    background-color: #222;
+    padding-left: 10px;
 }
 
 .charLiMenu{
@@ -120,7 +193,6 @@ span {
     padding-left: 0;
     padding-right: 0;
 }
-
 
 
 /*flout image
@@ -177,6 +249,11 @@ h5{
     font-size: 1.4em;
     color: white;
 }
+
+h5, h6 {
+    font-family: 'Ubuntu', cursive;
+
+}
 /*Border between block -- start footer script*/
 .flexFooter{
     display: flex;
@@ -190,6 +267,10 @@ h5{
     font-family: 'Ubuntu', sans-serif;
     margin: auto;
     padding-left: 0;
+}
+
+.listFooter li {
+    color:#555;
 }
 
 .reseauxSociaux{
@@ -214,8 +295,17 @@ h5{
     background-color: #333;
 }
 
+@media (max-width: 768px) {
+    .text_slider img {
+        width: 100%;
+    }
+    .text_slider {
+        font-size: 1.2em;
+    }
+}
+
 .infoFooter{
-    border-left:solid #400000;
+    border-left:solid #600000;
 }
 
 .reseauxBorder{
@@ -232,13 +322,22 @@ h5{
 .colorReseaux{
     color: whitesmoke;
 }
+
 i:hover{
     color:#600000;
+}
 
-@media (min-width: 768px)
-{
-    .text-slider
-    {
-        font-size: 1.2em;
+@media( min-width : 600px){
+/*   .disappearsNavMobile{
+        display: none;
+        
+    }*/
+    .paddingContainerNav{
+        padding: 0;
     }
+
+    .charLiMenu{
+        display: none;
+    }
+
 }
