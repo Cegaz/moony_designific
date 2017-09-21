@@ -1,3 +1,14 @@
+/* google fonts
+    font-family: 'Sedgwick Ave', cursive;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Days One', sans-serif;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-family: 'Schoolbell', cursive;
+    font-family: 'Titan One', cursive;
+    font-family: 'Finger Paint', cursive;
+*/
+
 body
 {
 	background-color: #000;
@@ -8,13 +19,25 @@ h6, h4 {
     text-align: center;
 }
 
+.onglets {
+    font-family: 'Schoolbell', sans-serif;
+    font-size: 1.5em;
+}
+
 h1
 {
-	font-family: 'Ubuntu', sans-serif;
+    font-family: 'Schoolbell', sans-serif;
 	color: #FFF;
-	background-color: #B5B5B5;
+    background-color: #600000;
 	padding: 10px;
 	font-size: 2em;
+}
+
+@media (min-width: 768px)
+{
+    h1{
+        text-align: center;
+    }
 }
 
 p
@@ -22,27 +45,41 @@ p
 	font-family: 'Ubuntu', sans-serif;
 	padding: 10px;
 	font-size: 1em;
-    color: #AAA;
+    color: #555;
 }
 
 @media (min-width: 768px)
 {
-    #ambiance_video
-    {
+    #ambiance_video, #ambiance_slider {
         width: 90%;
         margin: auto;
     }
+
+    .ambiance_encart {
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .ambiance_encart p {
+        font-size: 2em;
+        margin: auto;
+        margin-right: 100px;
+    }
 }
+
 
 #ambiance_video p
 {
     text-align: justify;
 }
 
+
 li
 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1em;
+    color: #AAA;
 }
 
 video
@@ -52,7 +89,7 @@ video
 
 .navHeader{
     height:70px;
-    background-color: #604040;
+    background-color: #333;   
 }
 
 .evenements_encart
@@ -100,7 +137,7 @@ span {
 }
 
 .menuFond{
-    background-color: rgb(150, 11, 24);
+    background-color: #600000;
     margin-top: -40px;
 }
 
@@ -108,7 +145,8 @@ span {
     font-size: 1.7em;
     font-family: 'ubuntu';
     color: whitesmoke;
-    background-color: rgba(96, 64, 64, 0.69);
+    background-color: #222;
+    padding-left: 10px;
 }
 
 .charLiMenu{
@@ -176,6 +214,11 @@ h5{
     font-size: 1.4em;
     color: white;
 }
+
+h5, h6 {
+    font-family: 'Ubuntu', cursive;
+
+}
 /*Border between block -- start footer script*/
 .flexFooter{
     display: flex;
@@ -189,6 +232,10 @@ h5{
     font-family: 'Ubuntu', sans-serif;
     margin: auto;
     padding-left: 0;
+}
+
+.listFooter li {
+    color:#555;
 }
 
 .reseauxSociaux{
@@ -213,8 +260,17 @@ h5{
     background-color: #333;
 }
 
+@media (max-width: 768px) {
+    .text_slider img {
+        width: 100%;
+    }
+    .text_slider {
+        font-size: 1.2em;
+    }
+}
+
 .infoFooter{
-    border-left:solid #400000;
+    border-left:solid #600000;
 }
 
 .reseauxBorder{
@@ -231,13 +287,7 @@ h5{
 .colorReseaux{
     color: whitesmoke;
 }
+
 i:hover{
     color:#600000;
-
-@media (min-width: 768px)
-{
-    .text-slider
-    {
-        font-size: 1.2em;
-    }
 }
