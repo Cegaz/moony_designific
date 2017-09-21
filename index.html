@@ -1,13 +1,16 @@
-<!DOCTYPE html> <!-- test cecile -->
+<!DOCTYPE html>
+<!-- test cecile -->
 <html>
 
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	
 	<script>
 		$(document).ready(function () {
 			$("#btn1").click(function () {
@@ -144,33 +147,33 @@
 							</figcaption>
 						</figure>
 					</div>
+				</div>
+
+				<div id="p2" class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail text-center">
+						<img src="images/food4.jpg">
+						<figcaption class="caption">
+							<h6>salade de choux</h6>
+							<h6>fait par nos soins</h6>
+							<h6>"4 $"</h6>
+						</figcaption>
+					</figure>
+				</div>
 
 
-					<div id="p2" class="col-sm-6 col-md-4 col-lg-3">
-						<figure class="thumbnail text-center">
-							<img src="images/food4.jpg">
-							<figcaption class="caption">
-								<h6>salade de choux</h6>
-								<h6>fait par nos soins</h6>
-								<h6>"4 $"</h6>
-							</figcaption>
-						</figure>
-					</div>
+				<div id="p3" class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail text-center">
+						<img src="images/food4.jpg">
+						<figcaption class="caption">
+							<h6>macedoines de légumes</h6>
+							<h6>fait par nos soins</h6>
+							<h6>"3.95 $"</h6>
+						</figcaption>
+					</figure>
 
-
-					<div id="p3" class="col-sm-6 col-md-4 col-lg-3">
-						<figure class="thumbnail text-center">
-							<img src="images/food4.jpg">
-							<figcaption class="caption">
-								<h6>macedoines de légumes</h6>
-								<h6>fait par nos soins</h6>
-								<h6>"3.95 $"</h6>
-							</figcaption>
-						</figure>
-
-					</div>
+				</div>
 			</section>
-
+		</section>
 			<!-- plats -->
 			<button id="btn2" class="btn btn-default btn-block">Nos Plats</button>
 			<section class="Menu container-fluid">
@@ -232,7 +235,7 @@
 						</figure>
 
 					</div>
-				</div>	
+				</div>
 			</section>
 
 			<!-- dessert -->
@@ -328,8 +331,9 @@
 							</div>
 
 						</section>
-
-						<!-- fin de partie le saviez vous -->
+					</div>
+				</div>
+			</section>			<!-- fin de partie le saviez vous -->
 
 
 
@@ -338,50 +342,42 @@
 							<h1>L'AMBIANCE</h1>
 
 							<article id="ambiance_video">
-								<!-- ajouter autoplay=1 dans les paramètres pour la version desktop ? -->
 								<div class="embed-responsive embed-responsive-16by9">
 									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/135651630?loop=1&color=64fad2&title=0&byline=0&portrait=0"
 									    width="640" height="270" frameborder="0"></iframe>
 								</div>
-								<p>Moony, la brasserie nouvelle génération, vous accueille toute l'année pour déguster de bons plats frais en terrasse,
-									à l'intérieur dans une ambiance sportive et conviviale, ou à l'abri des regards dans un patio privatif.</p>
 							</article>
 
 							<article id="ambiance_slider">
 								<div id="carousel-example-generic-bas" class="carousel slide" data-ride="carousel">
-									<!-- Indicators -->
-									<!--<ol class="carousel-indicators">
-			    <li data-target="carousel-example-generic-bas" data-slide-to="0" class="active"></li>
-			    <li data-target="carousel-example-generic-bas" data-slide-to="1"></li>
-			    <li data-target="carousel-example-generic-bas" data-slide-to="2"></li>
-			  </ol>-->
 
 									<!-- Wrapper for slides -->
 									<div class="carousel-inner" role="listbox">
 										<div class="item active text_slider">
-											<img src="images/ambiance11.jpg" alt="restaurant biarritz">
+											<div><img src="images/ambiance11.jpg" alt="restaurant biarritz"></div>
 											<p>Moony c'est l'aventure familiale d'un couple : John, passionné depuis toujours par la cuisine de son sud-ouest
-												natal...</p>
+												natal...
+											</p>
 										</div>
 										<div class="item text_slider">
-											<img src="images/ambiance4.jpg" alt="restaurant biarritz">
+											<div><img src="images/ambiance4.jpg" alt="restaurant biarritz"></div>
 											<p>... et Elisa, qui a parcouru le monde pour goûter aux différentes saveurs de 60 pays...</p>
 										</div>
 										<div class="item text_slider">
-											<img src="images/ambiance5.jpg" alt="restaurant biarritz">
+											<div><img src="images/ambiance5.jpg" alt="restaurant biarritz"></div>
 											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
 										</div>
 										<div class="item text_slider">
-											<img src="images/ambiance1.jpg" alt="restaurant biarritz">
-											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+											<div><img src="images/ambiance1.jpg" alt="restaurant biarritz"></div>
+											<p>Moony, la brasserie nouvelle génération, vous accueille toute l'année pour déguster de bons plats frais en terrasse...</p>
 										</div>
 										<div class="item text_slider">
-											<img src="images/ambiance7.jpg" alt="restaurant biarritz">
-											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+											<div><img src="images/ambiance7.jpg" alt="restaurant biarritz"></div>
+											<p>... à l'intérieur dans une ambiance sportive et conviviale...</p>
 										</div>
 										<div class="item text_slider">
-											<img src="images/ambiance8.jpg" alt="restaurant biarritz">
-											<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+											<div><img src="images/ambiance8.jpg" alt="restaurant biarritz"></div>
+											<p>... ou à l'abri des regards dans un patio privatif.</p>
 										</div>
 									</div>
 
@@ -402,79 +398,78 @@
 
 	<section id="evenements">
 		<h1>NOS ÉVÉNEMENTS</h1>
-<!-- est-ce qu'on prévoit des liens automatiques entre fb, instagram et le site ? il faudrait trouver un moyen de rendre cette partie dynamique...-->
 			<div class="container-fluid">
 				<article class="evenements_encart row">
 					<div class="col-xs-6"><img src="images/match1.jpg" alt="match rugby" class="image_evenement"></div>
-					<p class="col-xs-6">MOONY BORDEAUX // VENDREDI 15 SEPTEMBRE // 15H // <span>STADE TOULOUSAIN-UBB</span></p>
+					<p class="col-xs-6">MOONY BORDEAUX<br>VENDREDI 15/09 // 15H<br><span>STADE TOULOUSAIN-UBB</span></p>
 				</article>
 
 				<article class="evenements_encart row">
-					<p class="col-xs-6">MOONY BIARRITZ // VENDREDI 22 SEPTEMBRE // 20H // <span>REDIFFUSION FINALE SUPERBOWL</span></p>
+					<p class="col-xs-6">MOONY BIARRITZ<br>VENDREDI 22/09 // 20H<br><span>REDIFFUSION FINALE SUPERBOWL</span></p>
 					<div class="col-xs-6"><img src="images/match2.jpg" alt="match foot us" class="image_evenement"></div>
 				</article>
 
 				<article class="evenements_encart row">
 					<div class="col-xs-6"><img src="images/match3.jpg" alt="bière" class="image_evenement"></div>
-					<p class="col-xs-6">MOONY BORDEAUX // SAMEDI 23 SEPTEMBRE // 16H-19H // <span>HAPPY HOUR</span></p>
+					<p class="col-xs-6">MOONY BORDEAUX<br>SAMEDI 23/09 // 16H-19H<br><span>HAPPY HOUR</span></p>
 				</article>
 			</section>
 
-<!-- DAMIEN -->
-            <div class="container-fluid footer">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h5>Horaires</h5>
-                        <h6>Dejeuner</h6>
-                        <ul class="listFooter">
-                            <li>Lundi-Samedi</li>
-                            <li>11h30-18h</li>
-                        </ul>
+						<!-- DAMIEN -->
+						<div class="container-fluid footer">
+							<div class="row">
+								<h1>Infor pratique</h1>
+								<div class="col-xs-6 flexFooter">
+									<h5>Horaires</h5>
+									<h6>Dejeuner</h6>
+									<ul class="listFooter">
+										<li>Lundi-Samedi</li>
+										<li>11h30-18h</li>
+									</ul>
 
-                        <h6>Diner</h6>
-                        <ul class="listFooter">
-                            <li>Lundi-Samedi</li>
-                            <li>18h-23h30</li>
-                            <li>Dimanche</li>
-                            <li>18h30-23h00</li>
-                        </ul>
-                    </div>
+									<h6>Diner</h6>
+									<ul class="listFooter">
+										<li>Lundi-Samedi</li>
+										<li>18h-23h30</li>
+										<li>Dimanche</li>
+										<li>18h30-23h00</li>
+									</ul>
+								</div>
 
-                    <div class="col-xs-6 infoFooter">
-                        <h5>Adresse</h5>
-                        <ul class="listFooter">
-                            <li>28 Place Meynard,</br>33800 Bordeaux</li>
-                            <li>12 Rue du Port-Vieux,</br> 64200 Biarritz</li>
-                        </ul>
+								<div class="col-xs-6 infoFooter flexFooter">
+									<h5>Adresse</h5>
+									<ul class="listFooter">
+										<li>28 Place Meynard,<br/>33800 Bordeaux</li>
+										<li><a href="https://www.google.fr/maps/place/Moony/@44.8346365,-0.5688455,17z/data=!3m1!4b1!4m5!3m4!1s0xd5527cb8f9f0dd3:0x436287cdacb6f2bd!8m2!3d44.8346365!4d-0.5666568?hl=fr&dcr=0"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+										<li>12 Rue du Port-Vieux,<br/> 64200 Biarritz</li>
+										<li><a href = "https://www.google.fr/maps/place/Moony:+The+Homemade+Burger+Factory/@43.4822613,-1.5686586,17z/data=!3m1!4b1!4m5!3m4!1s0xd516b2f7a3753f3:0xc16312733970622d!8m2!3d43.4822574!4d-1.5664646?hl=fr&dcr=0"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+									</ul>
 
-                        <h6>Reservation</h6>
-                        <ul class="listFooter">
-                            <li>Bordeaux,</br> 09 72 82 81 81 </li>
-                            <li>Biarritz,</br> 05 59 24 71 05</li>
-                            <li>resto@moony64.com</li>
-                        </ul>
-                    </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h5 class="text-center">Tripadvisor</h5>
-                        
-                        <div id="TA_rated242" class="TA_rated blockTrip">
-                            <ul id="zkKWQhUnN8" class="TA_links GLF6sJFWL">
-                                <li id="aQmkzueP440g" class="45DnyAW"><a target="_blank" href="https://www.tripadvisor.fr/"><img src="https://www.tripadvisor.fr/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a></li>
-                            </ul>
-                        </div>
-                        
-                        <script src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=242&amp;locationId=10284682&amp;lang=fr&amp;display_version=2"></script>
+									<h6>Reservation</h6>
+									<ul class="listFooter">
+										<li>Bordeaux,<br/> 09 72 82 81 81 </li>
+										<li>Biarritz,<br/> 05 59 24 71 05</li>
+										<li>resto@moony64.com</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 reseauxBorder">
+									
 
-                        <div class="reseauxSociaux">
-                            <a href="http://facebook.fr"><img src="images/facebook.png" width="70" height="70" alt="logo"></a>
-                            <a href="http://instagram.fr"><img src="images/instagram.png"width="63" height="63"  alt="logo"></a>
-                        </div>    
-                    </div>
-                </div>    
-  <!-- Bien mettre jquery avant bootstrap -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+									
+									<div class="reseauxSociaux">
+										<a href="https://facebook.fr"><i class="fa fa-facebook fa-3x colorReseaux" aria-hidden="true"></i></a>
+										<a href="https://instagram.fr"><i class="fa fa-instagram fa-3x colorReseaux" aria-hidden="true"></i></a>
+										<a href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d10284682-Reviews-Moony-Bordeaux_Gironde_Nouvelle_Aquitaine.html"><i class="fa fa-tripadvisor fa-3x colorReseaux" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+	</div>						<!-- Bien mettre jquery avant bootstrap -->
+							<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+							<script src="https://use.fontawesome.com/b9ed5e70c5.js"></script>
 
 </body>
 
