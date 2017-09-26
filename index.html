@@ -8,33 +8,38 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Baloo+Bhaijaan|Cabin|Days+One|Finger+Paint|Schoolbell|Sedgwick+Ave|Sedgwick+Ave+Display|Titan+One" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Baloo+Bhaijaan|Cabin|Days+One|Finger+Paint|Schoolbell|Sedgwick+Ave|Sedgwick+Ave+Display|Titan+One"
+	    rel="stylesheet">
 
 	<script>
 		$(document).ready(function () {
 			$("#btn1").click(function () {
-				$("#p1").fadeToggle();
-				$("#p2").fadeToggle(2500);
-				$("#p3").fadeToggle("slow");
+				$("#entree").fadeToggle();
+
 
 			});
 		});
 
 		$(document).ready(function () {
 			$("#btn2").click(function () {
-				$("#p4").fadeToggle();
-				$("#p5").fadeToggle(2500);
-				$("#p6", "#p7", "#p8").fadeToggle("slow");
+				$("#plat").fadeToggle();
+
 
 			});
 		});
 
 		$(document).ready(function () {
 			$("#btn3").click(function () {
-				$("#p9").fadeToggle();
-				$("#p10").fadeToggle(2500);
-				$("#p11").fadeToggle("slow");
+				$("#dessert").fadeToggle();
 
+
+			});
+
+			$(function () {
+				var navMain = $("#bs-example-navbar-collapse-1");
+				navMain.on("click", "a", null, function () {
+					navMain.collapse('hide');
+				});
 			});
 		});
 	</script>
@@ -46,7 +51,7 @@
 	<div id="bloc_page">
 		<!-- DAMIEN -->
 		<nav class="navbar navbar-default navbar-fixed-top navHeader">
-				
+
 			<div class="container-fluid paddingContainerNav">
 				<div class="navbar-header displayContent">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -56,19 +61,19 @@
           					<span class="icon-bar"></span>
           					<span class="icon-bar"></span>
       						</button>
-							  
+
 					<div class="center-block disappearsNavMobile">
-						<img class="pull-left" src="images/logotrip.png" width="70" height="70">
+						<img class="pull-left logoTrip" src="images/logotrip.png" width="70" height="70">
 						<img class="logoMoony" src="images/logomoony.png" width="120" height="110" alt="logoRestaurant">
 					</div>
-					
 				</div>
 
 
 				<!-- Le menu et menu-burger -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					
+
 					<ul class="nav navbar-nav navbar-right menuFond charLiMenu">
+						<li><a href="#ambiance">L'ambiance</a></li>
 						<li><a href="#ambiance">L'ambiance</a></li>
 						<li><a href="#menuAncre">Nos menus</a></li>
 						<li><a href="#evenements">Nos évenements</a></li>
@@ -80,8 +85,54 @@
 				<!-- /.navbar-collapse -->
 			</div>
 			<!-- /.container-fluid -->
+			<!-- Menu version Desktop -->
 		</nav>
+		<div class="row menuVersionDesktop">
+			<div class="col-md-4">
+				<figure>
+					<img src="images/burgerDesktop.jpg" class="img-responsive" alt="Responsive image">
+					<figcaption>
+						<h6>Nos menus</h6>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel mollis mauris. Ut quis suscipit tortor, ac interdum
+							arcu. Vivamus tristique non mi in luctus. Nunc mollis, lacus ut lobortis finibus, nibh turpis eleifend dolor, sed
+							finibus ligula mi ac est. Morbi sed tempor tellus. Aenean a imperdiet augue. Integer tristique lacus vitae euismod
+							pharetra. Nunc in metus pulvinar, posuere. </p>
+					</figcaption>
+				</figure>
+			</div>
 
+			<div class="col-md-4">
+				<figure>
+					<img src="images/biereballon.jpg" class="img-responsive" alt="Responsive image">
+					<figcaption>
+						<h6>Nos evenements</h6>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel mollis mauris. Ut quis suscipit tortor, ac interdum
+							arcu. Vivamus tristique non mi in luctus. Nunc mollis, lacus ut lobortis finibus, nibh turpis eleifend dolor, sed
+							finibus ligula mi ac est. Morbi sed tempor tellus. Aenean a imperdiet augue. Integer tristique lacus vitae euismod
+							pharetra. Nunc in metus pulvinar, posuere. </p>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="col-md-4">
+				<figure>
+					<img src="images/ambianceDesktop.jpg" class="img-responsive" alt="Responsive image">
+					<figcaption>
+						<h6>L'Ambiance</h6>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel mollis mauris. Ut quis suscipit tortor, ac interdum
+							arcu. Vivamus tristique non mi in luctus. Nunc mollis, lacus ut lobortis finibus, nibh turpis eleifend dolor, sed
+							finibus ligula mi ac est. Morbi sed tempor tellus. Aenean a imperdiet augue. Integer tristique lacus vitae euismod
+							pharetra. Nunc in metus pulvinar, posuere. </p>
+					</figcaption>
+				</figure>
+			</div>
+
+		</div>
+		<!--Menu version Desktop fin -->
 		<div class="container-fluid noPaddingSlider">
 			<div id="carousel-example-generic-haut" class="carousel carousel-haut slide " data-ride="carousel">
 
@@ -90,7 +141,7 @@
 				<div class="carousel-inner " role="listbox">
 					<div class="item active survole">
 						<div>
-							<img src="images/ambiance.jpg" alt="images" class="img-responsive">
+							<a href="#ambiance"><img src="images/ambiance.jpg" alt="images" class="img-responsive"></a>
 
 							<div class="titlePhoto">L'ambiance</div>
 						</div>
@@ -100,7 +151,7 @@
 					</div>
 					<div class="item">
 						<div>
-							<img src="images/food11.jpg" alt="image" class="img-responsive">
+							<a href="#menuAncre"><img src="images/food11.jpg" alt="image" class="img-responsive"></a>
 							<div class="titlePhoto">Nos menus</div>
 							<div class="carousel-caption"></div>
 						</div>
@@ -108,7 +159,7 @@
 					</div>
 					<div class="item">
 						<div>
-							<img src="images/rugby2.jpg" alt="image" class="img-responsive">
+							<a href="#evenements"><img src="images/rugby2.jpg" alt="image" class="img-responsive"></a>
 							<div class="titlePhoto">Nos événements</div>
 						</div>
 						<div class="carousel-caption"></div>
@@ -129,7 +180,7 @@
 		<!-- SEGA -->
 
 		<section id="menuAncre">
-					<h1>Nos menus</h1>
+			<h1>Nos menus<a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-saint-genes-victoire/moony" target="_blank"><span class="glyphicon fa fa-shopping-basket fa-1x" aria-hidden="true"></span></a></h1>
 			<div class="container-fluid">
 				<div class="navbar-header">
 				</div>
@@ -138,10 +189,10 @@
 			<!-- entrées -->
 			<button id="btn1" class="btn btn-default btn-block onglets">Nos Entrées</button>
 			<section class="Menu container-fluid">
-				<div id="p1" class="row">
+				<div class="row" id="entree">
 					<div class="col-sm-6 col-md-4 col-lg-3">
 						<figure class="thumbnail text-center">
-							<img src="images/food4.jpg">
+							<img src="images/food3.jpg">
 							<figcaption class="caption">
 								<h6>salade composée</h6>
 								<h6>fait par nos soins</h6>
@@ -149,39 +200,41 @@
 							</figcaption>
 						</figure>
 					</div>
-				</div>
-
-				<div id="p2" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food4.jpg">
-						<figcaption class="caption">
-							<h6>salade de choux</h6>
-							<h6>fait par nos soins</h6>
-							<h6>"4 $"</h6>
-						</figcaption>
-					</figure>
-				</div>
 
 
-				<div id="p3" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food4.jpg">
-						<figcaption class="caption">
-							<h6>macedoines de légumes</h6>
-							<h6>fait par nos soins</h6>
-							<h6>"3.95 $"</h6>
-						</figcaption>
-					</figure>
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food8.jpg">
+							<figcaption class="caption">
+								<h6>salade de choux</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"4 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
 
-				</div>
+
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food4.jpg">
+							<figcaption class="caption">
+								<h6>macedoines de légumes</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
 			</section>
-		</section>
+
 
 			<!-- plats -->
 			<button id="btn2" class="btn btn-default btn-block onglets">Nos Plats</button>
 			<section class="Menu container-fluid">
-				<div id="p4" class="row">
+
+				<div id="plat" class="row">
 					<div class="col-sm-6 col-md-4 col-lg-3">
+
 						<figure class="thumbnail text-center">
 							<img src="images/food1.jpg">
 							<figcaption class="caption">
@@ -192,111 +245,110 @@
 						</figure>
 					</div>
 
-				<div id="p5" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food2.jpg">
-						<figcaption class="caption">
-							<h6>burger wilder</h6>
-							<h6>viandes de qualités</h6>
-							<h6>"4 $"</h6>
-						</figcaption>
-					</figure>
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food2.jpg">
+							<figcaption class="caption">
+								<h6>burger wilder</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"4 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food3.jpg">
+							<figcaption class="caption">
+								<h6>burger bordelais</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
+
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food5.jpg">
+							<figcaption class="caption">
+								<h6>burger spartiate</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food11.jpg">
+							<figcaption class="caption">
+								<h6>burger de l'extreme</h6>
+								<h6>viandes de qualités</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
 				</div>
-
-
-				<div id="p6" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food3.jpg">
-						<figcaption class="caption">
-							<h6>burger bordelais</h6>
-							<h6>viandes de qualités</h6>
-							<h6>"3.95 $"</h6>
-						</figcaption>
-					</figure>
-
-				</div>
-
-				<div id="p7" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food5.jpg">
-						<figcaption class="caption">
-							<h6>burger spartiate</h6>
-							<h6>viandes de qualités</h6>
-							<h6>"3.95 $"</h6>
-						</figcaption>
-					</figure>
-				</div>
-
-				<div id="p8" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food11.jpg">
-						<figcaption class="caption">
-							<h6>burger de l'extreme</h6>
-							<h6>viandes de qualités</h6>
-							<h6>"3.95 $"</h6>
-						</figcaption>
-					</figure>
-
-				</div>
-			</div>
-		</section>
+			</section>
 
 			<!-- dessert -->
 			<button id="btn3" class="btn btn-default btn-block onglets"> Nos Desserts</button>
 
-		<section class="Menu container-fluid">
-			<div id="p9" class="row">
-				<div class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food9.jpg">
-						<figcaption class="caption">
-							<h6>crémé glacée</h6>
-							<h6>fait par nos soins</h6>
-							<h6>"4.50 $"</h6>
-						</figcaption>
-					</figure>
+			<section class="Menu container-fluid">
+				<div id="dessert" class="row">
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food15.jpg">
+							<figcaption class="caption">
+								<h6>crémé glacée</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"4.50 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food14.jpg">
+							<figcaption class="caption">
+								<h6>Crumble</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"4 $"</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<figure class="thumbnail text-center">
+							<img src="images/food16.jpg">
+							<figcaption class="caption">
+								<h6>Yoghurt granola</h6>
+								<h6>fait par nos soins</h6>
+								<h6>"3.95 $"</h6>
+							</figcaption>
+						</figure>
+
+					</div>
+
 				</div>
-
-				<div id="p10" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food14.jpg">
-						<figcaption class="caption">
-							<h6>Crumble</h6>
-							<h6>fait par nos soins</h6>
-							<h6>"4 $"</h6>
-						</figcaption>
-					</figure>
-				</div>
-
-				<div id="p11" class="col-sm-6 col-md-4 col-lg-3">
-					<figure class="thumbnail text-center">
-						<img src="images/food4.jpg">
-						<figcaption class="caption">
-							<h6>Yoghurt granola</h6>
-							<h6>fait par nos soins</h6>
-							<h6>"3.95 $"</h6>
-						</figcaption>
-					</figure>
-
-				</div>
-
-			</div>
-
+			</section>
 		</section>
 
 		<!-- partie le saviez vous -->
 
 		<section id="saviezAncre">
-					<h1>Le saviez-vous ?<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
-					<div class="container">
-					<div class="navbar-header">
+			<h1>Le saviez-vous ?<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
+			<div class="container">
+				<div class="navbar-header">
 
 
 					<section class="Menu container-fluid">
 						<div class="row">
 
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<figure class="thumbnail text-center">
+								<figure class="thumbnail text-center2">
 									<img src="images/buns.jpg">
 									<figcaption class="caption">
 										<h6>Nos pains burger</h6>
@@ -306,13 +358,8 @@
 								</figure>
 							</div>
 
-						
-						<div class="container">
-						</div>
-
-
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<figure class="thumbnail text-center">
+								<figure class="thumbnail text-center2">
 									<img src="images/savburger.png">
 									<figcaption class="caption">
 										<h6>Nos burger</h6>
@@ -323,7 +370,7 @@
 
 
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<figure class="thumbnail text-center">
+								<figure class="thumbnail text-center2">
 									<img src="images/steak.jpg">
 									<figcaption class="caption">
 										<h6>Nos viandes</h6>
@@ -337,71 +384,72 @@
 					</section>
 				</div>
 
-			</section>			<!-- fin de partie le saviez vous -->
+		</section>
+		<!-- fin de partie le saviez vous -->
 
-						<!-- CECILE -->
-						<section id="ambiance">
-							<h1>L'ambiance<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
+		<!-- CECILE -->
+		<section id="ambiance">
+			<h1>L'ambiance<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
 
-							<article id="ambiance_video">
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/135651630?loop=1&color=64fad2&title=0&byline=0&portrait=0"
-									    width="640" height="270"></iframe>
-								</div>
-							</article>
+			<article id="ambiance_video">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/135651630?loop=1&color=64fad2&title=0&byline=0&portrait=0"
+					    width="640" height="270"></iframe>
+				</div>
+			</article>
 
-							<article id="ambiance_slider">
-								<div id="carousel-example-generic-bas" class="carousel slide" data-ride="carousel">
+			<article id="ambiance_slider">
+				<div id="carousel-example-generic-bas" class="carousel slide" data-ride="carousel">
 
-									<!-- Wrapper for slides -->
-									<div class="carousel-inner" role="listbox">
-										<div class="item active text_slider">
-											<div class='ambiance_encart'>
-												<div><img src="images/ambiance11.jpg" alt="restaurant biarritz"></div>
-												<p>Moony c'est l'aventure familiale d'un couple : John, passionné depuis toujours par la cuisine de son sud-ouest
-												natal...</p>
-											</div>
-										</div>
-										<div class="item text_slider">
-											<div class='ambiance_encart'>
-												<div><img src="images/elisa.jpg" alt="restaurant biarritz"></div>
-												<p>... et Elisa, qui a parcouru le monde pour goûter aux différentes saveurs de 60 pays...</p>
-											</div>
-										</div>
-										<div class="item text_slider">
-											<div class='ambiance_encart'>
-												<div><img src="images/ambiance5.jpg" alt="restaurant biarritz"></div>
-												<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
-											</div>
-										</div>
-										<div class="item text_slider">
-											<div class='ambiance_encart'>
-												<div><img src="images/ambiance1.jpg" alt="restaurant biarritz"></div>
-												<p>L'équipe de Moony, la brasserie nouvelle génération...</p>
-											</div>
-										</div>
-										<div class="item text_slider">
-											<div class='ambiance_encart'>
-												<div><img src="images/ambiance10.jpg" alt="restaurant biarritz"></div>
-												<p>...vous accueille toute l'année pour déguster de bons plats frais en terrasse...</p>
-											</div>
-										</div>
-										<div class="item text_slider">
-											<div class='ambiance_encart'>
-												<div><img src="images/ambiance8.jpg" alt="restaurant biarritz"></div>
-												<p>... à l'extérieur dans une ambiance sportive et conviviale...</p>
-											</div>
-										</div>
-										<div class="item text_slider">
-											<div class='ambiance_encart'>
-												<div><img src="images/ambiance7.jpg" alt="restaurant biarritz"></div>
-												<p>... ou à l'abri des regards dans un patio privatif.</p>
-											</div>
-										</div>
-									</div>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active text_slider">
+							<div class='ambiance_encart'>
+								<div><img src="images/ambiance11.jpg" alt="restaurant biarritz"></div>
+								<p>Moony c'est l'aventure familiale d'un couple : John, passionné depuis toujours par la cuisine de son sud-ouest natal...
+								</p>
+							</div>
+						</div>
+						<div class="item text_slider">
+							<div class='ambiance_encart'>
+								<div><img src="images/elisa.jpg" alt="restaurant biarritz"></div>
+								<p>... et Elisa, qui a parcouru le monde pour goûter aux différentes saveurs de 60 pays...</p>
+							</div>
+						</div>
+						<div class="item text_slider">
+							<div class='ambiance_encart'>
+								<div><img src="images/ambiance5.jpg" alt="restaurant biarritz"></div>
+								<p>... En alliant leurs expériences culinaires et internationales ils donnent naissance à un concept unique.</p>
+							</div>
+						</div>
+						<div class="item text_slider">
+							<div class='ambiance_encart'>
+								<div><img src="images/ambiance1.jpg" alt="restaurant biarritz"></div>
+								<p>L'équipe de Moony, la brasserie nouvelle génération...</p>
+							</div>
+						</div>
+						<div class="item text_slider">
+							<div class='ambiance_encart'>
+								<div><img src="images/ambiance10.jpg" alt="restaurant biarritz"></div>
+								<p>...vous accueille toute l'année pour déguster de bons plats frais en terrasse...</p>
+							</div>
+						</div>
+						<div class="item text_slider">
+							<div class='ambiance_encart'>
+								<div><img src="images/ambiance8.jpg" alt="restaurant biarritz"></div>
+								<p>... à l'extérieur dans une ambiance sportive et conviviale...</p>
+							</div>
+						</div>
+						<div class="item text_slider">
+							<div class='ambiance_encart'>
+								<div><img src="images/ambiance7.jpg" alt="restaurant biarritz"></div>
+								<p>... ou à l'abri des regards dans un patio privatif.</p>
+							</div>
+						</div>
+					</div>
 
-									<!-- Controls -->
-									<a class="left carousel-control" href="#carousel-example-generic-bas" role="button" data-slide="prev">
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic-bas" role="button" data-slide="prev">
 
 			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			    <span class="sr-only">Previous</span>
@@ -415,8 +463,8 @@
 
 		</section>
 
-	<section id="evenements">
-		<h1>Nos événements<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
+		<section id="evenements">
+			<h1>Nos événements<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
 
 			<div class="container-fluid">
 				<article class="evenements_encart row">
@@ -424,7 +472,7 @@
 					<p class="col-xs-6">MOONY BORDEAUX<br>VENDREDI 15/09 // 15H<br><span>STADE TOULOUSAIN-UBB</span></p>
 				</article>
 
-				<article class="evenements_encart row">
+				<article class="evenements_encart evenements_encart_d row">
 					<p class="col-xs-6">MOONY BIARRITZ<br>VENDREDI 22/09 // 20H<br><span>REDIFFUSION FINALE SUPERBOWL</span></p>
 					<div class="col-xs-6"><img src="images/match2.jpg" alt="match foot us" class="image_evenement_droite"></div>
 				</article>
@@ -436,61 +484,70 @@
 			</div>
 		</section>
 
-						<!-- DAMIEN -->
-						<div class="container-fluid footer">
-							<div class="row">
-								<h1>Infos pratiques<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
-									<div class="col-xs-6 flexFooter">
-									<h5>Horaires</h5>
-									<h6>Dejeuner</h6>
-									<ul class="listFooter">
-										<li>Lundi-Samedi</li>
-										<li>11h30-18h</li>
-									</ul>
+		<!-- DAMIEN -->
+		<div id="footerAncre" class="container-fluid footer">
+			<div class="row">
+				<h1>Infos pratiques<a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></h1>
+				<div class="col-xs-6 col-md-4 flexFooter">
+					<h5>Horaires</h5>
+					<h6>Dejeuner</h6>
+					<ul class="listFooter">
+						<li>Lundi-Samedi</li>
+						<li>11h30-18h</li>
+					</ul>
 
-									<h6>Diner</h6>
-									<ul class="listFooter">
-										<li>Lundi-Samedi</li>
-										<li>18h-23h30</li>
-										<li>Dimanche</li>
-										<li>18h30-23h00</li>
-									</ul>
-								</div>
+					<h6>Diner</h6>
+					<ul class="listFooter">
+						<li>Lundi-Samedi</li>
+						<li>18h-23h30</li>
+						<li>Dimanche</li>
+						<li>18h30-23h00</li>
+					</ul>
+				</div>
 
-								<div class="col-xs-6 infoFooter flexFooter">
-									<h5>Adresse</h5>
-									<ul class="listFooter">
-										<li>28 Place Meynard,<br/>33800 Bordeaux</li>
-										<li><a href="https://www.google.fr/maps/place/Moony/@44.8346365,-0.5688455,17z/data=!3m1!4b1!4m5!3m4!1s0xd5527cb8f9f0dd3:0x436287cdacb6f2bd!8m2!3d44.8346365!4d-0.5666568?hl=fr&dcr=0"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-										<li>12 Rue du Port-Vieux,<br/> 64200 Biarritz</li>
-										<li><a href = "https://www.google.fr/maps/place/Moony:+The+Homemade+Burger+Factory/@43.4822613,-1.5686586,17z/data=!3m1!4b1!4m5!3m4!1s0xd516b2f7a3753f3:0xc16312733970622d!8m2!3d43.4822574!4d-1.5664646?hl=fr&dcr=0"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-									</ul>
+				<div class="col-xs-6 col-md-4 infoFooter flexFooter">
+					<h5>Adresse</h5>
+					<ul class="listFooter">
+						<li>28 Place Meynard,<br/>33800 Bordeaux</li>
+						<li><a href="https://www.google.fr/maps/place/Moony/@44.8346365,-0.5688455,17z/data=!3m1!4b1!4m5!3m4!1s0xd5527cb8f9f0dd3:0x436287cdacb6f2bd!8m2!3d44.8346365!4d-0.5666568?hl=fr&dcr=0"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+						<li>12 Rue du Port-Vieux,<br/> 64200 Biarritz</li>
+						<li><a href="https://www.google.fr/maps/place/Moony:+The+Homemade+Burger+Factory/@43.4822613,-1.5686586,17z/data=!3m1!4b1!4m5!3m4!1s0xd516b2f7a3753f3:0xc16312733970622d!8m2!3d43.4822574!4d-1.5664646?hl=fr&dcr=0"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+					</ul>
 
-									<h6>Reservation</h6>
-									<ul class="listFooter">
-										<li>Bordeaux,<br/> 09 72 82 81 81 </li>
-										<li>Biarritz,<br/> 05 59 24 71 05</li>
-										<li>resto@moony64.com</li>
-									</ul>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 reseauxBorder">
-									
+					<h6>Reservation</h6>
+					<ul class="listFooter">
+						<li>Bordeaux,<br/> 09 72 82 81 81 </li>
+						<li>Biarritz,<br/> 05 59 24 71 05</li>
+						<li>resto@moony64.com</li>
+					</ul>
+				</div>
 
-									
-									<div class="reseauxSociaux">
-										<a href="https://facebook.fr"><i class="fa fa-facebook fa-3x colorReseaux" aria-hidden="true"></i></a>
-										<a href="https://instagram.fr"><i class="fa fa-instagram fa-3x colorReseaux" aria-hidden="true"></i></a>
-										<a href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d10284682-Reviews-Moony-Bordeaux_Gironde_Nouvelle_Aquitaine.html"><i class="fa fa-tripadvisor fa-3x colorReseaux" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-	</div>						<!-- Bien mettre jquery avant bootstrap -->
-							<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-							<script src="https://use.fontawesome.com/b9ed5e70c5.js"></script>
+				<div id="footerDesktop" class="col-md-4 reseauxBorder infoFooter">
+
+
+					<a href="https://facebook.fr"><i class="fa fa-facebook fa-3x colorReseaux" aria-hidden="true"></i></a>
+					<a href="https://instagram.fr"><i class="fa fa-instagram fa-3x colorReseaux" aria-hidden="true"></i></a>
+					<a href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d10284682-Reviews-Moony-Bordeaux_Gironde_Nouvelle_Aquitaine.html"><i class="fa fa-tripadvisor fa-3x colorReseaux" aria-hidden="true"></i></a>
+
+
+				</div>
+			</div>
+
+			<div id="footerMobile">
+				<div class="col-xs-12 reseauxBorder">
+					<div class="reseauxSociaux">
+						<a href="https://facebook.fr"><i class="fa fa-facebook fa-3x colorReseaux" aria-hidden="true"></i></a>
+						<a href="https://instagram.fr"><i class="fa fa-instagram fa-3x colorReseaux" aria-hidden="true"></i></a>
+						<a href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d10284682-Reviews-Moony-Bordeaux_Gironde_Nouvelle_Aquitaine.html"><i class="fa fa-tripadvisor fa-3x colorReseaux" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- Bien mettre jquery avant bootstrap -->
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+		<script src="https://use.fontawesome.com/b9ed5e70c5.js"></script>
 
 </body>
 

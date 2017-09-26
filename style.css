@@ -1,4 +1,4 @@
-/* google fonts
+/*   google fonts
     font-family: 'Sedgwick Ave', cursive;
     font-family: 'Cabin', sans-serif;
     font-family: 'Sedgwick Ave Display', cursive;
@@ -11,7 +11,7 @@
 
 body
 {
-	background-color: #000;
+    background-color: #000;
 }
 
 h6, h4 {
@@ -24,13 +24,25 @@ h6, h4 {
     font-size: 1.5em;
 }
 
+
+
 h1
 {
-    font-family: 'Schoolbell', sans-serif;
-	color: #FFF;
+    font-family: 'Finger Paint', sans-serif;
+    color: #FFF;
     background-color: #600000;
-	padding: 10px;
+    padding: 10px;
+    font-size: 1.7em;
 }
+
+#menuAncre{
+    background-image: url("images/fond-ardoise.jpg");
+}
+
+#entree, #plat, #dessert{
+    display: none;
+}
+
 
 @media (min-width: 768px)
 {
@@ -42,9 +54,9 @@ h1
 
 p
 {
-	font-family: 'Ubuntu', sans-serif;
-	padding: 10px;
-	font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    font-size: 1em;
     color: #555;
 }
 
@@ -82,18 +94,25 @@ li
     color: #AAA;
 }
 
+.btn-default{
+    color: #333;
+    background-color: #F8F8FF;
+    border-color: #ccc;
+}
+
 .navbar-collapse{
     border: none;
 }
 
 .navbar-default .navbar-nav > li > a{
-    color: rgb(150, 11, 24);
+    color: white;
+    font-weight: bold;
     font-size:1.2em;
 }
 
 video
 {
-	padding: 0 auto;
+    padding: 0 auto;
 }
 
 .navHeader{
@@ -107,21 +126,21 @@ video
 
 .evenements_encart
 {
-	display: flex;
-	padding: 5px 0 15px 0;
-	font-size: 0.8em;
+    display: flex;
+    padding: 5px 0 15px 0;
+    font-size: 0.8em;
 }
 
 .image_evenement
 {
     width: 150px;
-    float: left;
+    float: right;
 }
 
 .image_evenement_droite
 {
     width: 150px;
-    float: right;
+    float: left;
 }
 
 .evenements_encart p
@@ -139,22 +158,27 @@ video
     .evenements_encart p
     {
         font-size: 2em;
+        text-align: left;
+    }
+
+    .evenements_encart_d p
+    {
         text-align: right;
     }
 }
 
 .image_slider
 {
-	height: 100px;
+    height: 100px;
 }
 
 .logo
 {
-	width: 20px;
+    width: 20px;
 }
 
 span {
-	color : #FFF;
+    color : #FFF;
     font-size: 1.2em;
 }
 
@@ -169,13 +193,15 @@ span {
 }
 
 .menuFond{
-    background-color: #600000;
+    
     margin-top: -40px;
-   /* background-color: rgb(150, 11, 24);*/
-    /*margin-top: -40px;*/
-     color:red ;
 }
 
+/*Menu version Desktop*/
+.menuVersionDesktop{
+    border-top-width: 120px;
+    border-top-style: solid;
+}
 
 .titlePhoto{
     font-size: 1.7em;
@@ -193,9 +219,6 @@ span {
     padding-left: 0;
     padding-right: 0;
 }
-
-
-/*flout image
 
 figure {
     position: relative;
@@ -219,7 +242,7 @@ figcaption {
     left: 0;
     padding: .5em;
     background: #000;
-    background: rgba(0, 0, 0, .75);
+    background: rgba(97, 0, 0, 0.75);
     color: #fff;
     opacity: 0;
 }
@@ -229,7 +252,6 @@ figure:hover img {
 figure:hover figcaption {
     opacity: 0.7;
 }
-flout image*/
 
 .logoMoony{
     margin: auto;
@@ -302,6 +324,10 @@ h5, h6 {
     .text_slider {
         font-size: 1.2em;
     }
+
+    .img-responsive{
+        height:480px;
+    }
 }
 
 .infoFooter{
@@ -327,17 +353,55 @@ i:hover{
     color:#600000;
 }
 
+#footerDesktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+}
+
+
+
 @media( min-width : 600px){
-/*   .disappearsNavMobile{
-        display: none;
-        
-    }*/
+  
     .paddingContainerNav{
         padding: 0;
+
+    }
+    .charLiMenu{
+        display: none;
+    /* début des rajouts */
+    }
+    .logoMoony{ 
+        height: 150px;
+        width: 160px;
     }
 
-    .charLiMenu{
+    .logoTrip{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .navHeader{
+        height: 113px;
+    }
+
+    .noPaddingSlider{
         display: none;
     }
 
+    #footerMobile{
+        display: none;
+    }
+}
+@media(max-width : 600px){
+    .menuVersionDesktop{
+        display: none;
+    }
+
+    #footerDesktop{
+        display:none;
+    }
+    
 }
