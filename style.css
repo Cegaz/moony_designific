@@ -1,0 +1,420 @@
+body{
+    background-color: #000;
+}
+
+h6, h4{
+    color: #FFF;
+    text-align: center;
+}
+
+.onglets{
+    font-family: 'Schoolbell', sans-serif;
+    font-size: 1.5em;
+}
+
+h1{
+    font-family: 'Finger Paint', sans-serif;
+    color: #FFF;
+    background-color: #600000;
+    padding: 10px;
+    font-size: 1.7em;
+}
+
+#menuAncre{
+    background-image: url("images/fond-ardoise.jpg");
+}
+
+#entree, #plat, #dessert{
+    display: none;
+}
+
+
+@media (min-width: 768px)
+{
+    h1{
+        text-align: center;
+        font-size: 3em;
+    }
+}
+
+p
+{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+@media (min-width: 768px)
+{
+    #ambiance_video, #ambiance_slider {
+        width: 90%;
+        margin: auto;
+    }
+
+    .ambiance_encart {
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .ambiance_encart p {
+        font-size: 2em;
+        margin: auto;
+        margin-right: 100px;
+    }
+}
+
+
+#ambiance_video p
+{
+    text-align: justify;
+}
+
+
+li
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #AAA;
+}
+
+.btn-default{
+    color: #333;
+    background-color: #F8F8FF;
+    border-color: #ccc;
+}
+
+.navbar-collapse{
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: white;
+    font-weight: bold;
+    font-size:1.2em;
+}
+
+video
+{
+    padding: 0 auto;
+}
+
+.navHeader{
+    height:70px;
+    background-color: #333;   
+}
+
+.displayContent{
+    display: contents;
+}
+
+.evenements_encart
+{
+    display: flex;
+    padding: 5px 0 15px 0;
+    font-size: 0.8em;
+}
+
+.image_evenement
+{
+    width: 150px;
+    float: right;
+}
+
+.image_evenement_droite
+{
+    width: 150px;
+    float: left;
+}
+
+.evenements_encart p
+{
+    margin: auto;
+}
+
+@media (min-width: 768px)
+{
+    .evenements_encart img
+    {
+        width: 400px;
+        padding: 20px;
+    }
+    .evenements_encart p
+    {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .evenements_encart_d p
+    {
+        text-align: right;
+    }
+}
+
+.image_slider
+{
+    height: 100px;
+}
+
+.logo
+{
+    width: 20px;
+}
+
+span {
+    color : #FFF;
+    font-size: 1.2em;
+}
+
+.glyphicon {
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .glyphicon {
+        margin-right: 15px;
+    }
+}
+
+.menuFond{
+    margin-top: -40px;
+}
+
+/*Menu version Desktop*/
+.menuVersionDesktop{
+    border-top-width: 120px;
+    border-top-style: solid;
+}
+.menuVersionDesktop figure{
+    width: 100%;
+}
+.menuVersionDesktop img{
+    width: 100%;
+}
+.titlePhoto{
+    font-size: 1.7em;
+    font-family: 'ubuntu';
+    color: whitesmoke;
+    padding-left: 10px;
+    text-align: center;
+}
+figcaption .titlePhoto{
+    margin-top: 200px;
+    font-size: 3em;
+    font-weight: bold;
+}
+.charLiMenu{
+    font-family: 'ubuntu';
+}
+
+.noPaddingSlider{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+img, figcaption {
+    transition: all .25s ease;
+}
+img {
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    background: #000;
+    color: #fff;
+    opacity: 0;
+}
+figure:hover img {
+    transform: scale(1.1);
+}
+figure:hover figcaption {
+    opacity: 0.7;
+}
+
+.logoMoony{
+    margin: auto;
+    display: block;
+}
+
+.carousel-haut{
+    margin-top: 70px;
+}
+
+/*CSS Footer */
+h6{
+    font-size: 1.2em;
+}
+
+h5{
+    font-size: 1.4em;
+    color: white;
+}
+h5, h6 {
+    font-family: 'Ubuntu', cursive;
+
+}
+/*Border between block -- start footer script*/
+.flexFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.listFooter{
+    list-style-type:none;
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto;
+    padding-left: 0;
+}
+
+.listFooter li {
+    color:#555;
+}
+
+.reseauxSociaux{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer{
+    margin-top: 10px;
+
+}
+
+.centerBlockFooter{
+    padding-left: 0px;
+}
+/*Border between block -- end footer script*/
+.image{
+    padding-left: 0;
+}
+
+.text_slider {
+    background-color: #333;
+}
+.text_slider img{
+    width:100%;
+}
+
+@media (max-width: 768px) {
+    .text_slider img {
+        width: 100%;
+    }
+    .text_slider {
+        font-size: 1.2em;
+    }
+
+    .img-responsive{
+        width: 100vw;
+        height: 80vh;
+        margin: auto;
+    }
+}
+
+.infoFooter{
+    border-left:solid #600000;
+}
+
+.reseauxBorder{
+    
+    padding-top: 15px;
+    
+}
+
+.blockTrip{
+    display: flex;
+    justify-content: center;
+}
+
+.colorReseaux{
+    color: whitesmoke;
+}
+
+i:hover{
+    color:#600000;
+}
+
+#footerDesktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+}
+
+
+
+@media( min-width : 600px){
+  
+    .paddingContainerNav{
+        padding: 0;
+
+    }
+    .charLiMenu{
+        display: none;
+    /* début des rajouts */
+    }
+    .logoMoony{ 
+        height: 150px;
+        width: 160px;
+    }
+
+    .logoTrip{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .navHeader{
+        height: 113px;
+    }
+
+    .noPaddingSlider{
+        display: none;
+    }
+
+    #footerMobile{
+        display: none;
+    }
+}
+@media(max-width : 600px){
+    .menuVersionDesktop{
+        display: none;
+    }
+
+    #footerDesktop{
+        display:none;
+    }
+    
+}
+
+#signature p{
+    color: #FFF;
+    font-size: 1rem;
+    text-align: center;
+}
+#footerDesktop #signature p{
+    font-size: 1.3rem;
+}
+@media(min-width: 600px){
+    .sticker{
+        width: 28vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
